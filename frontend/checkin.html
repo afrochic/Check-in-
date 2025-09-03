@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Check-in Scanner</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/html5-qrcode"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+  <div class="bg-white p-6 rounded-xl shadow w-full max-w-md">
+    <h1 class="text-xl font-bold mb-4">Check-in Scanner</h1>
+    <div id="reader" class="w-full h-80 border rounded"></div>
+    <div id="scan-result" class="hidden mt-4 bg-green-50 p-3 rounded">
+      <div id="scan-name" class="font-semibold"></div>
+      <div id="scan-email" class="text-sm text-gray-600"></div>
+      <div id="scan-id" class="text-xs text-gray-400"></div>
+    </div>
+    <div id="scan-error" class="hidden mt-4 bg-red-50 text-red-600 p-3 rounded"></div>
+  </div>
+
+  <script type="module" src="./js/checkin.js"></script>
+</body>
+</html>
